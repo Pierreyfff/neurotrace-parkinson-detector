@@ -10,7 +10,8 @@ app = Flask(__name__)
 CORS(app)
 
 # ============= CONFIGURACIÓN =============
-MODEL_PATH = 'C:/Users/Maria/Downloads/parkinson_detector_mobilenetv2.keras'  # ⚠️ AJUSTAR RUTA
+import os
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'parkinson_detector_mobilenetv2.keras')
 
 CLASS_NAMES = [
     'other',
