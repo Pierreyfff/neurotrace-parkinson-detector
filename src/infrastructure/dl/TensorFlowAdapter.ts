@@ -2,7 +2,7 @@ import type { IDeepLearningModel } from '../../domain/ports/IDeepLearningModel';
 import type { Analysis } from '../../domain/entities/Analysis';
 
 export class TensorFlowAdapter implements IDeepLearningModel {
-  private readonly API_URL = 'http://localhost:5000';
+  private readonly API_URL = import.meta.env.VITE_API_URL || 'https://neurotrace-parkinson-detector-1.onrender.com';
   private modelLoaded = false;
 
   async loadModel(): Promise<void> {
