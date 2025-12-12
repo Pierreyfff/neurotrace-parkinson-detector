@@ -1,3 +1,4 @@
+@"
 # Logs
 logs
 *.log
@@ -7,10 +8,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Build outputs
 dist
 dist-ssr
-*.local
+
+# Environment variables
+*. local
+.env
+.env.production
+.env. *. local
 
 # Editor directories and files
 .vscode/*
@@ -19,16 +28,16 @@ dist-ssr
 .DS_Store
 *.suo
 *.ntvs*
-*.njsproj
+*. njsproj
 *. sln
-*.sw? 
+*.sw?
 
 # Python
-__pycache__
+__pycache__/
 *.py[cod]
 *`$py.class
 *.so
-.Python
+. Python
 venv/
 . venv/
 ENV/
@@ -36,5 +45,16 @@ env/
 *. egg-info/
 .pytest_cache/
 
-# Model file (demasiado grande para git, lo subiremos manual)
-backend/*.keras
+# Model files (too large for git)
+*.keras
+*. h5
+*.pb
+
+# Images
+*. png
+*.jpg
+*.jpeg
+
+# OS
+Thumbs.db
+"@ | Out-File -FilePath ".gitignore" -Encoding UTF8

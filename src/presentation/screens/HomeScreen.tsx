@@ -34,10 +34,10 @@ export const HomeScreen: React.FC = () => {
         {/* Hero Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Analiza tu dibujo en busca de indicios tempranos de Parkinson
+            Analiza y clasifica tu dibujo para identificar rasgos relacionados con el Parkinson.
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Sube una imagen clara de un dibujo en espiral o de ondas sobre un
+            Sube o dibuja una imagen clara de un dibujo en espiral o de ondas sobre un
             fondo liso. Esta herramienta utiliza un modelo de aprendizaje
             profundo para analizar características asociadas con la enfermedad
             de Parkinson.
